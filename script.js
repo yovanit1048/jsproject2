@@ -24,7 +24,7 @@ wowYoufailed();// Calls function for the prompt to show up
 function cityManchester(){//the section for user's choice
 var freeMeals = [];
 var theFreemeal = prompt("Which city in New York are you looking for, to get free meal?(First word must be Capitalized!)");
-var aleRt = alert("These are the schools that have free meals");//user can pick from place they want their lunch
+var aleRt = alert("These are the schools that have free meals in " + theFreemeal + ".");//user can pick from place they want their lunch
 for (i = 0; i < data.length; i++) {
   if(data[i].city == undefined){
     freeMeals.push("None".split(", ")); // 
@@ -36,7 +36,7 @@ for (i = 0; i < data.length; i++) {
         for (i = 0; i < data.length; i++) {
           for(var j = 0; j < freeMeals[i].length; j++){
             if (freeMeals[i][j] == theFreemeal){
-              document.write(data[i].schoolname + "<br>, " + data[i].siteaddress); //gives the data of the school names and the streeet
+              document.write(data[i].schoolname + "<br>* "); //gives the data of the school names and the streeet
               }
           }
      }
@@ -45,26 +45,26 @@ for (i = 0; i < data.length; i++) {
 
 
 function districtGood(){// the second section for user's choice
-var districtlunch = [];
-var userDist = prompt("What your choice of District?(Numbers Only!)");
+var distrIctor = [];
+var madIstrict = prompt("What district do you want to search?");
+var alErt = alert("These are the schools that have free meals in the " + madIstrict + " district.");
 for (i = 0; i < data.length; i++) {
   if(data[i].district == undefined){
-    districtlunch.push("None".split(", "));
+    distrIctor.push("None".split(", "))
     }
     else{
-      districtlunch.push(data[i].district.split(", "));
+      distrIctor.push(data[i].district.split(", "));
+        }
       }
-      }
-      for (i = 0; i < data.length; i++){
-        for (var j = 0; j < userDist[i].length; j++){
-          if (districtlunch[i][j] == userDist){
-            document.write(data[i].schoolname + "<br>, ");
-          }
-          }
-      }
+      for (i = 0; i < data.length; i++) {
+      for(var j = 0; j < distrIctor[i].length; j++){
+        if (distrIctor[i][j] == madIstrict){
+          document.write(data[i].schoolname + "*<br> ")
+        }
+    }
+    }
 }
-
-}     
+}
 });
 //Ill just leave like this so tmr ealry i can fix it ok
 //
