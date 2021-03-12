@@ -4,7 +4,7 @@ $.ajax({
     success: function(data) {
 
 
-var welecoming = alert("Hello, this is the covid meal location database.")//The topic
+var welecoming = alert("Hello, this is the Covid Meal location database.")//The topic
 
 function wowYoufailed(){
   var goldEditiongames = parseInt(prompt("Choose from the following options using numbers: 1. City 2. District."));//This gives user choice to choose betwwen city and district.
