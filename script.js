@@ -6,7 +6,8 @@ $.ajax({
 
 var welecoming = alert("Hello, this is the covid meal location database.")//The topic
 
-function goldEditiongames(){ prompt("Choose from the following options using numbers: 1. City 2. District.");//This gives user choice to choose betwwen city and district.
+function wowYoufailed(){
+  var goldEditiongames = parseInt(prompt("Choose from the following options using numbers: 1. City 2. District."));//This gives user choice to choose betwwen city and district.
 
 
 if (goldEditiongames === 1) {
@@ -17,7 +18,7 @@ else if (goldEditiongames === 2) {
 }
 }
 
-goldEditiongames();// Calls function for the prompt to show up
+wowYoufailed();// Calls function for the prompt to show up
 
 
 function cityManchester(){//the section for user's choice
@@ -41,7 +42,7 @@ for (i = 0; i < data.length; i++) {
      }
 }
 
-cityManchester();
+
 
 function districtGood(){// the second section for user's choice
 var districtlunch = [];
@@ -62,8 +63,6 @@ for (i = 0; i < data.length; i++) {
           }
       }
 }
-
-districtGood();
 
 }     
 });
